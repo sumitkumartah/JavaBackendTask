@@ -1,0 +1,10 @@
+ //For creating object and store in arraylist
+ public void playQuizzz(){
+        List<Question>qs=new ArrayList<>();
+        qs.add(new Question(1, "What is correct option", "1", "2", "3", "4", 3));
+
+        System.out.println(qs.get(0).getQuestion());
+    }
+
+
+
