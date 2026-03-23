@@ -1,0 +1,26 @@
+1.  OverLoadingExample.java
+-->  In Java, when multiple overloaded methods match a call, the compiler always picks the most specific one.
+
+   Q.  In the following code, which method will be called by obj.method(null)?
+       void method(String s) { ... }
+       void method(Integer i) { ... }
+
+       output-> Compilation Error
+        cause- If you call obj.method(null) with these two, the compiler will throw an "Ambiguous Method Call" error because
+            String and Integer are at the same level (neither is more specific than the other), and both can accept null.
+
+   Q.  Consider these methods. What is the output of obj.method(null)?
+       void method(Object o) { System.out.println("Object"); }
+       void method(String s) { System.out.println("String"); }
+       void method(StringBuilder sb) { System.out.println("StringBuilder"); }
+
+        output-> Compilation error
+         Cause- String and StringBuilder are at the same level
+
+   Q. How can you force the compiler to call the Object version of a method
+      when a String version also exists, while passing a null value?
+        output-> obj.method((Object) null)
+
+-------------------------------------------------------------------------------------------------
+
+2.
