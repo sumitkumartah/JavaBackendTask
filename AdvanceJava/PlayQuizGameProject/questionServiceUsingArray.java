@@ -1,5 +1,4 @@
 package PlayQuizGameProject;
-import  PlayQuizGameProject.Question.*;
 
 import java.util.Scanner;
 
