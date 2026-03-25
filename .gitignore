@@ -1,8 +1,0 @@
-#ignore everything
-.gitignore
-
-#allow directionz
-!*/
-
-#allow only java files
-!*.java
