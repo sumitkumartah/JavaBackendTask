@@ -34,6 +34,6 @@ Note- This is compile time exception(checked exception)  so in method5 exception
       throws keyword and pass it to method4. method4 pass exception to method3 using
       throws. Like that I pass it upto main method and there I handle this exception using try-catch.
 
- ---> For runtime exception you can or can't use throws. Its not mandetory.
+ ---> For runtime exception(unchecked) you can or can't use throws. Its not mandetory.
 
  */
