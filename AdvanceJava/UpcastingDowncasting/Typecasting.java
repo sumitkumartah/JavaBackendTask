@@ -11,5 +11,8 @@ public class Typecasting {
 
         System.out.println(a);
 
+
+
+
     }
 }
