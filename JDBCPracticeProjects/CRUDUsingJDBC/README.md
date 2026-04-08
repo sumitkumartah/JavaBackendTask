@@ -41,7 +41,7 @@ com
 
 ---
 
-## 🗄️ Database Setup
+# 🗄️ Database Setup
 
 ### Database Name
 CRUD_Proj_DB
@@ -86,16 +86,6 @@ private static final String pass = "1234";
 1 - Sumit - 90
 2 - Rahul - 85
 
----
-
-## ⚠️ Known Issue & Fix
-Issue: nextLine() skips input after nextInt()
-
-Fix:
-sc.nextLine();
-String name = sc.nextLine();
-
----
 
 ## 📌 Best Practices
 - Used PreparedStatement
