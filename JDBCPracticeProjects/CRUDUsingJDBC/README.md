@@ -29,6 +29,7 @@ This project demonstrates:
 ---
 
 ## 📂 Project Structure
+```
 com
 ├── DAO
 │   └── StudentDao.java
@@ -38,13 +39,16 @@ com
 │   └── Student.java
 ├── Main
 │   └── Main.java
-
+```
 ---
 
 # 🗄️ Database Setup
 
 ### Database Name
 CRUD_Proj_DB
+
+### Table Name
+student
 
 ### Table Schema
 CREATE TABLE student (
@@ -54,12 +58,50 @@ CREATE TABLE student (
 );
 
 ---
+## 🧩 Class Responsibilities
 
+### 📁 `Main.java`
+- Acts as the **entry point** of the application
+- Provides a **menu-driven interface**
+- Takes user input using `Scanner`
+- Calls appropriate methods from `StudentDao` based on user choice
+
+---
+
+### 📁 `StudentDao.java`
+- Handles all **CRUD operations**
+- Interacts directly with the database using JDBC
+
+Functions:
+- `insertStudent()` → Inserts new student record
+- `readStudent()` → Fetches and displays all records
+- `updateStudent()` → Updates name or marks
+- `deleteStudent()` → Deletes student by ID
+
+---
+
+### 📁 `DBConnecttion.java`
+- Responsible for **establishing database connection**
+- Uses `DriverManager.getConnection()`
+- Returns a `Connection` object to DAO class
+
+---
+
+### 📁 `Student.java`
+- Represents the **Student entity (Model class)**
+- Contains fields:
+    - `id`
+    - `name`
+    - `marks`
+- Provides getter methods to access data
+
+---
 ## 🔌 Database Configuration
+```
 private static final String URL = "jdbc:postgresql://localhost:5432/CRUD_Proj_DB";
 private static final String UNAME = "postgres";
 private static final String pass = "1234";
-
+```
 ---
 
 ## 🛠️ Setup Instructions
